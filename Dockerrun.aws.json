@@ -6,28 +6,28 @@
             "image": "skorov/multi-client",
             "hostname": "client",
             "essential": false,
-            "memory": 1024
+            "memory": 128
         },
         {
             "name": "server",
             "image": "skorov/multi-server",
             "hostname": "api",
             "essential": false,
-            "memory": 1024
+            "memory": 128
         },
         {
             "name": "worker",
             "image": "skorov/multi-worker",
             "hostname": "worker",
             "essential": false,
-            "memory": 1024
+            "memory": 128
         },
         {
             "name": "nginx",
             "image": "skorov/multi-nginx",
             "hostname": "nginx",
             "essential": true,
-            "memory": 1024,
+            "memory": 128,
             "portMappings": [
                 {
                     "hostPort": 80,
